@@ -17,6 +17,19 @@ func Exists(name string) bool {
 	return true
 }
 
+//func FastMv(dst, src string) error {
+//	dstInfo, err := os.Stat(dst)
+//	if err != nil {
+//		return err
+//	}
+//
+//	dstSys := dstInfo.Sys()
+//	switch dstSys.(type) {
+//	case *syscall.Stat_t:
+//
+//	}
+//}
+
 // Mv copies the file at src to the new file at dst.
 // Credit: https://gist.github.com/elazarl/5507969
 func Mv(dst, src string) error {
